@@ -1,0 +1,6 @@
+C:\Users\91983\Desktop\Assignment\.netapp\bin\Release\net10.0\publish\AppService.exe
+C:\Users\91983\Desktop\Assignment\.netapp\bin\Release\net10.0\publish\appsettings.json
+C:\Users\91983\Desktop\Assignment\.netapp\bin\Release\net10.0\publish\AppService.dll
+C:\Users\91983\Desktop\Assignment\.netapp\bin\Release\net10.0\publish\AppService.deps.json
+C:\Users\91983\Desktop\Assignment\.netapp\bin\Release\net10.0\publish\AppService.runtimeconfig.json
+C:\Users\91983\Desktop\Assignment\.netapp\bin\Release\net10.0\publish\AppService.pdb
