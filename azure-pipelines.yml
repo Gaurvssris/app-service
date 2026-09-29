@@ -4,7 +4,7 @@ trigger:
       - main
 
 pool:
-  name: Gau-Vik
+  name: 'Gau-Vik'                          # apne agent pool ka naam (Azure DevOps > Project settings > Agent pools)
 
 variables:
   buildConfiguration: 'Release'
@@ -43,7 +43,7 @@ stages:
         command: publish
         publishWebProjects: false
         projects: '**/*.csproj'
-        arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) --no-build'
+        arguments: '--configuration $(buildConfiguration) --output "$(Build.ArtifactStagingDirectory)" --no-build'
         zipAfterPublish: true
 
     - task: PublishPipelineArtifact@1
@@ -69,6 +69,6 @@ stages:
             displayName: Deploy to $(webAppName)
             inputs:
               azureSubscription: '$(azureSubscription)'
-              appType: 'webAppLinux'
+              appType: 'webAppLinux'       # Windows App Service ho to 'webApp' likho
               appName: '$(webAppName)'
               package: '$(Pipeline.Workspace)/drop/**/*.zip'
